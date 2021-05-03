@@ -8,84 +8,136 @@
     <title>Anasayfa</title>
     <style>
         body {
+            background-color: #E9ECEF;
             margin: 0;
             padding: 0;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         }
 
+        .nav {
+
+            background-color: #333;
+            color: red;
+            padding: 0 .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: right
+        }
+
+        .Linkler {
+
+
+            list-style: none;
+            display: flex;
+
+
+        }
+
+        .link {
+
+            padding: .5rem;
+
+
+
+        }
+
+        .link:hover {
+            background-color: #777;
+
+        }
+
+        .link a {
+            text-decoration: none;
+
+            color: inherit;
+        }
+
         .header {
 
             text-align: center;
             margin: 0;
-            background-color: violet;
-            color: white;
+            color: red;
             padding: 2rem;
         }
 
         .header {
-            background-color: violet;
-            color: white;
+            color: red;
             padding: 2rem;
         }
 
-        .container {
+
+
+        h3 {
+            text-align: center;
+            color: red;
+            font-size: 2rem;
+        }
+
+        .container2 {
             text-align: center;
             margin: 0;
+
+
+        }
+
+        .container2 ul {
+            display: inline-block;
+        }
+
+        h2 {
+            color: red;
         }
 
         h3 {
             text-align: center;
-            color: violet;
-            font-size: 2rem;
-        }
-        
-        .container2{
-            text-align: center;
-            margin: 0;
-        
-        
-        }
-        .container2 ul{
-            display:inline-block;
-        }
-        h2{
-            color: violet;
-        }
-
-        h3 {
-            text-align: center;
-            color: violet;
+            color: red;
             font-size: 2rem;
         }
 
-        .container ul{
+        .container ul {
             text-align: center;
+
+
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p button {
           
-           
-           
-        }
-        p{
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 2em;
+            padding: 2rem;
+            background-color: blue;
             text-align: center;
+            color: white;
         }
-
-     
     </style>
 </head>
 
 <body>
+
+    <nav class="nav">
+        <span><a style="color: red;" href="anasayfa.html">Müzik Dükkanım</a></span>
+        <ul class="Linkler">
+            <li style="color: white;" class="link"><a href="anasayfa.html">Ana Sayfa</a></li>
+            <li style="color: white;" class="link"><a href="ürünler.html">ürünler</a></li>
+            <li style="color: white;" class="link"><a href="Hakkımızda.html">Hakkımızda</a></li>
+
+        </ul>
+    </nav>
+
+
     <header class="header">
-        <h1 class="header-title">Müzik Dükkanım</h1><br>
+        <h1 class="header-title">Merhaba!</h1><br>
 
 
 
     </header>
-    <div class="container">
-        <a href="anasayfa.html">anasayfa</a>
-        <a href="ürünler.html">ürünler</a>
-        <a href="Hakkımızda.html">Hakkımızda</a>
-
     </div>
-    <h3>Anasayfa</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ullam molestiae autem reprehenderit
         distinctio sequi dolorem temporibus voluptatibus veniam.</p>
 
@@ -102,7 +154,10 @@
 
 
     </div>
-
+    <p>
+        <button><a style="color: white;" href="Hakkımızda.html">Hakkımızda</a></button>
+        
+    </p>
 
 </body>
 

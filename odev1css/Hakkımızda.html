@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda</title>
     <style>
-        body{
+        body {
+            background-color: #E9ECEF;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             margin: 0;
             padding: 0;
 
         }
-        .container {
+
+        .header {
             text-align: center;
-            margin: 0;
-        }
-        .header{
-            text-align: center;
-            color:t
-
-        }
-        h2{
-            color:violet;
+            color: t
         }
 
-        
+        h2 {
+            color: red;
+        }
+
+        .nav {
+
+            background-color: #333;
+            color: red;
+            padding: 0 .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: right
+        }
+
+        .Linkler {
 
 
+            list-style: none;
+            display: flex;
+        }
+
+        .link {
+
+            padding: .5rem;
+        }
+
+        .link:hover {
+            background-color: #777;
+
+        }
+
+        .link a {
+            text-decoration: none;
+
+            color: inherit;
+        }
+
+        section {
+            padding: 10px;
+        }
     </style>
-
-
-
-
 </head>
-<body>
-    <h2 class="header">Hakkımızda</h2>
-    <div class="container">
-        <a href="anasayfa.html">anasayfa</a>
-        <a href="ürünler.html">ürünler</a>
-        <a href="Hakkımızda.html">Hakkımızda</a>
 
-    </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque reiciendis aspernatur quaerat minus? Ea quam sed laborum adipisci nam!</p>
-    <h2 >Vizyonumuz</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ex nostrum nobis itaque inventore consectetur ad natus, perspiciatis quam omnis fugit exercitationem consequuntur aut pariatur unde dolores architecto consequatur obcaecati similique modi autem quos, repellat sapiente. Deleniti itaque omnis recusandae saepe tempora, ipsa corrupti amet nesciunt incidunt. Earum, dolores quo.</p>
-    <h2>Misyonumuz</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laboriosam quo, voluptatibus in harum omnis asperiores unde sit soluta molestias, exercitationem repellat. Vitae mollitia voluptas veritatis neque aperiam velit voluptate, consectetur eos itaque molestias officiis dicta consequuntur deleniti quaerat nulla, dolorem doloremque accusantium. Odio veritatis dolore reprehenderit voluptas quaerat vero modi exercitationem dolorum tempore nemo, aliquid corrupti! Dolorem quisquam unde fuga quaerat. Blanditiis est natus architecto praesentium placeat voluptatum reiciendis.</p>
+<body>
+    <nav class="nav">
+        <span><a style="color: red;" href="anasayfa.html">Müzik Dükkanım</a></span>
+        <ul class="Linkler">
+            <li style="color: white;" class="link"><a href="anasayfa.html">Ana Sayfa</a></li>
+            <li style="color: white;" class="link"><a href="ürünler.html">ürünler</a></li>
+            <li style="color: white;" class="link"><a href="Hakkımızda.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2 class="header">Hakkımızda</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus eaque reiciendis aspernatur quaerat minus? Ea
+            quam sed laborum adipisci nam!</p>
+        <h2>Vizyonumuz</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ex nostrum nobis itaque inventore consectetur ad
+            natus, perspiciatis quam omnis fugit exercitationem consequuntur aut pariatur unde dolores architecto
+            consequatur obcaecati similique modi autem quos, repellat sapiente. Deleniti itaque omnis recusandae saepe
+            tempora, ipsa corrupti amet nesciunt incidunt. Earum, dolores quo.</p>
+        <h2>Misyonumuz</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid laboriosam quo, voluptatibus in harum omnis
+            asperiores unde sit soluta molestias, exercitationem repellat. Vitae mollitia voluptas veritatis neque aperiam
+            velit voluptate, consectetur eos itaque molestias officiis dicta consequuntur deleniti quaerat nulla, dolorem
+            doloremque accusantium. Odio veritatis dolore reprehenderit voluptas quaerat vero modi exercitationem dolorum
+            tempore nemo, aliquid corrupti! Dolorem quisquam unde fuga quaerat. Blanditiis est natus architecto praesentium
+            placeat voluptatum reiciendis.</p>
+    </section>
 </body>
+
 </html>

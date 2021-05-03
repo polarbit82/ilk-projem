@@ -11,98 +11,137 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             margin: 0;
             padding: 0;
-
-
-
+            background-color: #E9ECEF;
         }
+
         .container {
-            text-align: center;
-            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
-        
-
-
-
-        .ürünler {
+        .container ol {
             text-align: center;
-            color: violet;
-            font-size: 2rem;
+            font-size: 1em;
+            display: inline-grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows:auto;
+            column-gap: 15px;
+            row-gap: 15px;
+            list-style-type: none;
+        }
 
+        .container ol li {
+            color: black;
+            width: 20em;
+            border: 1px dotted #ccc;
+            padding: 1em;
+            background-color: white;
+            text-align: center;
+        }
 
+        .container ol li img
+        {
+            width: calc(100% - 2em);
+            height: auto;
+        }
+       
+
+        .nav {
+            background-color: #333;
+            color: red;
+            padding: 0 .5rem;
+            display: flex;
+            align-items: center;
+            justify-content: right
+        }
+
+        .Linkler {
+            list-style: none;
+            display: flex;
+        }
+
+        .link {
+            padding: .5rem;
+        }
+
+        .link:hover {
+            background-color: #777;
 
         }
 
-        .section {
-            text-align: center;
-            margin: 0;
+        .link a {
+            text-decoration: none;
 
-
-
+            color: inherit;
         }
 
-        .resim ol {
-            display: inline-block
+        .fiyat {
+            background-color: #ddd;
+            border-radius: 5px;
+            padding: 3px;
+            margin-top: 5px;
+            float: left;
+            display: block;
+            margin-left: 10px;
         }
     </style>
 </head>
 
 <body>
-    
-
-    <section class="section">
-
-        <h2 class="ürünler">ürünler</h2>
-        <div class="container">
-            <a href="anasayfa.html">anasayfa</a>
-            <a href="ürünler.html">ürünler</a>
-            <a href="Hakkımızda.html">Hakkımızda</a>
-    
-        </div>
-        <div class="resim">
-            <ol type="1">
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/100x100" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, nisi!</div>
 
 
+    <nav class="nav">
+        <span><a style="color: red;" href="anasayfa.html">Müzik Dükkanım</a></span>
+        <ul class="Linkler">
+            <li style="color: white;" class="link"><a href="anasayfa.html">Ana Sayfa</a></li>
+            <li style="color: white;" class="link"><a href="ürünler.html">ürünler</a></li>
+            <li style="color: white;" class="link"><a href="Hakkımızda.html">Hakkımızda</a></li>
+        </ul>
+    </nav>
 
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/101x101" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/102x102" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/101x101" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/103x103" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/104x104" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
-                </li>
-                <li>
-                    <img src="https://source.unsplash.com/user/erondu/105x105" alt="">
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
-                </li>
+    </div>
 
+    <div class="container">
+        <ol type="1">
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/300x300" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, nisi!</div>
+                <span class="fiyat">300 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/301x301" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
+                <span class="fiyat">500 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/302x302" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
+                <span class="fiyat">700 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/303x303" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
+                <span class="fiyat">950 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/304x304" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
+                <span class="fiyat">750 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/305x305" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, perspiciatis.</div>
+                <span class="fiyat">650 TL</span>
+            </li>
+            <li>
+                <img src="https://source.unsplash.com/user/erondu/306x306" alt="">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, culpa?</div>
+                <span class="fiyat">1000 TL</span>
+            </li>
+        </ol>
 
+</div>
 
-
-            </ol>
-
-
-
-
-        </div>
-    </section>
 </body>
 
 </html>
